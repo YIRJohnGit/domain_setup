@@ -16,6 +16,8 @@ if [[ "$(id -u)" -ne 0 ]]; then
     exit 1
 fi
 
+echo -e "${YELLOW}Maintenance of Virtual Domain with Apache Web Server ${NC}"
+
 # Getting the user input of domain name
 read -p "Enter the domain [Example: mnsp.co.in]: " DOMAIN
 # Check if the domain is empty
